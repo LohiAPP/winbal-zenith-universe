@@ -1,26 +1,42 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { CursorGlow } from "@/components/CursorGlow";
+import { SmoothScroll } from "@/components/SmoothScroll";
+import { Nav } from "@/components/Nav";
+import { Hero } from "@/components/Hero";
+import { Universe } from "@/components/Universe";
+import { Destinations } from "@/components/Destinations";
+import { Intelligence } from "@/components/Intelligence";
+import { Membership } from "@/components/Membership";
+import { Footer } from "@/components/Footer";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Winbal Travel Club — A Private Universe of Luxury Travel" },
+      {
+        name: "description",
+        content:
+          "An invitation-only travel membership offering 5,000+ destinations, AI travel intelligence, and a 24/7 global concierge. Travel smarter, experience more, pay less.",
+      },
+      { property: "og:title", content: "Winbal Travel Club — Private Travel Membership" },
+      { property: "og:description", content: "Luxury holidays, rare destinations and lifetime experiences — by membership alone." },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <main className="relative overflow-hidden">
+      <SmoothScroll />
+      <CursorGlow />
+      <Nav />
+      <Hero />
+      <Universe />
+      <Destinations />
+      <Intelligence />
+      <Membership />
+      <Footer />
+    </main>
+  );
 }
