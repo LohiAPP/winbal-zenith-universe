@@ -3,6 +3,8 @@ import leisure from "@/assets/package-leisure.jpg";
 import adventure from "@/assets/package-adventure.jpg";
 import family from "@/assets/package-family.jpg";
 import corporate from "@/assets/package-corporate.jpg";
+import business from "@/assets/package-business.png";
+import education from "@/assets/package-education.png";
 
 const packages = [
   {
@@ -34,14 +36,14 @@ const packages = [
     note: "Business itineraries layered with restorative escapes — for the modern executive.",
   },
   {
-    img: corporate,
+    img: business,
     tag: "Business",
     title: "Global Executive",
     places: "London · Tokyo · Frankfurt · Hong Kong",
     note: "Seamless corporate travel with dedicated account managers and premium transit.",
   },
   {
-    img: family,
+    img: education,
     tag: "Education",
     title: "Enrichment Journeys",
     places: "Oxford · Boston · Kyoto · Florence",
