@@ -60,17 +60,20 @@ export function Membership() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.9, delay: i * 0.1 }}
-              className={`group relative glass-card p-8 md:p-10 border rounded-3xl hover:-translate-y-2 transition-all duration-700 ${t.style} ${
-                t.featured ? "lg:scale-[1.05] shadow-[0_0_50px_rgba(212,175,55,0.15)] bg-gradient-to-b from-gold/[0.08] to-transparent ring-1 ring-gold/20 z-10" : "bg-white/[0.02] hover:bg-white/[0.04]"
+              className={`group relative flex flex-col ${
+                t.featured ? "lg:scale-[1.05] z-10" : "z-0"
               }`}
             >
               {t.featured && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 text-[10px] tracking-[0.4em] font-bold uppercase bg-gold-gradient text-navy px-5 py-2 rounded-full shadow-[0_0_20px_rgba(212,175,55,0.5)] border border-white/20 whitespace-nowrap">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 text-[10px] tracking-[0.4em] font-bold uppercase bg-gold-gradient text-navy px-5 py-2 rounded-full shadow-[0_0_20px_rgba(212,175,55,0.6)] border border-white/20 whitespace-nowrap z-20">
                   Most Popular
                 </div>
               )}
-              <div className="text-[10px] tracking-[0.4em] uppercase text-champagne/70">{t.tag}</div>
-              <h3 className="font-display text-4xl mt-3">{t.name}</h3>
+              <div className={`flex-1 flex flex-col glass-card p-8 md:p-10 border rounded-3xl hover:-translate-y-2 transition-all duration-700 ${t.style} ${
+                t.featured ? "shadow-[0_0_60px_rgba(212,175,55,0.2)] bg-gradient-to-b from-gold/[0.12] to-transparent ring-2 ring-gold/40 border-gold/60" : "bg-white/[0.02] hover:bg-white/[0.04]"
+              }`}>
+                <div className="text-[10px] tracking-[0.4em] uppercase text-champagne/70">{t.tag}</div>
+                <h3 className="font-display text-4xl mt-3">{t.name}</h3>
               <div className="mt-4 flex items-baseline gap-2">
                 <span className="font-display text-3xl text-gold-gradient">{t.price}</span>
               </div>
@@ -84,7 +87,10 @@ export function Membership() {
                   </li>
                 ))}
               </ul>
-              <button className={`w-full justify-center text-[10px] tracking-[0.3em] uppercase py-3 rounded-xl transition-all ${t.featured ? 'bg-gold-gradient text-navy font-bold shadow-lg hover:shadow-[0_0_20px_rgba(212,175,55,0.4)]' : 'border border-white/20 text-pearl hover:bg-white/10'}`}>Request Invitation</button>
+                <div className="mt-auto pt-8">
+                  <button className={`w-full justify-center text-[10px] tracking-[0.3em] uppercase py-3 rounded-xl transition-all ${t.featured ? 'bg-gold-gradient text-navy font-bold shadow-lg hover:shadow-[0_0_20px_rgba(212,175,55,0.4)]' : 'border border-white/20 text-pearl hover:bg-white/10'}`}>Request Invitation</button>
+                </div>
+              </div>
             </motion.div>
           ))}
         </div>
