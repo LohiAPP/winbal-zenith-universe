@@ -84,8 +84,8 @@ export function Hero() {
           transition={{ duration: 1, delay: 1.4 }}
           className="mt-10 max-w-xl text-pearl/70 text-base md:text-lg leading-relaxed font-light"
         >
-          An invitation to the world's most exclusive travel society. Curated luxury holidays,
-          rare global destinations, and lifetime experiences — accessible only through membership.
+          Exclusive travel memberships offering luxury holidays, 5,000+ global destinations,
+          and lifetime experiences at unbeatable member prices.
         </motion.p>
 
         <motion.div
@@ -95,14 +95,14 @@ export function Hero() {
           className="mt-12 flex flex-wrap items-center gap-4"
         >
           <a href="#membership" className="btn-gold">
-            Become a Member
+            Join Membership
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M5 12h14M13 5l7 7-7 7" />
             </svg>
           </a>
-          <a href="#destinations" className="btn-ghost">Explore Experiences</a>
-          <a href="#contact" className="text-[11px] tracking-[0.3em] uppercase text-pearl/60 hover:text-champagne transition-colors ml-2 underline-offset-8 hover:underline decoration-gold/40">
-            Book your journey →
+          <a href="#packages" className="btn-ghost">Explore Packages</a>
+          <a href="#how" className="text-[11px] tracking-[0.3em] uppercase text-pearl/60 hover:text-champagne transition-colors ml-2 underline-offset-8 hover:underline decoration-gold/40">
+            Book your holiday →
           </a>
         </motion.div>
 
