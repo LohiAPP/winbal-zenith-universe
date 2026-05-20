@@ -15,7 +15,7 @@ const nodes = [
 export function Universe() {
   const [active, setActive] = useState(0);
   return (
-    <section id="universe" className="relative py-32 md:py-48 overflow-hidden">
+    <section id="universe" className="relative py-12 md:py-20 overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,oklch(0.26_0.10_264/0.35),transparent_60%)]" />
 
       <div className="relative max-w-[1400px] mx-auto px-6 md:px-12">
@@ -82,8 +82,8 @@ export function Universe() {
                   <span className={`block rounded-full transition-all duration-500 ${
                     isActive ? "w-4 h-4 bg-champagne shadow-gold" : "w-2 h-2 bg-gold/70"
                   }`} />
-                  <span className={`absolute left-6 top-1/2 -translate-y-1/2 whitespace-nowrap text-xs font-medium tracking-[0.2em] uppercase transition-all duration-300 px-3 py-1.5 rounded-full bg-black/60 backdrop-blur-md border ${
-                    isActive ? "text-champagne opacity-100 border-gold/40 shadow-lg" : "text-pearl/90 opacity-90 border-white/15 group-hover:border-white/30"
+                  <span className={`absolute ${x > 50 ? 'right-6' : 'left-6'} top-1/2 -translate-y-1/2 whitespace-nowrap text-xs font-medium tracking-[0.2em] uppercase transition-all duration-300 px-3 py-1.5 rounded-full bg-black/60 backdrop-blur-md border ${
+                    isActive ? "text-champagne opacity-100 border-gold/40 shadow-lg z-20" : "text-pearl/90 opacity-90 border-white/15 group-hover:border-white/30 z-10"
                   }`}>{n.key}</span>
                 </button>
               );
@@ -106,10 +106,10 @@ export function Universe() {
                   key={n.key}
                   onMouseEnter={() => setActive(i)}
                   onFocus={() => setActive(i)}
-                  className={`w-full text-left p-6 border transition-all duration-500 ${
+                  className={`w-full text-left p-6 border rounded-2xl transition-all duration-500 glass-card ${
                     isActive
-                      ? "border-gold/40 bg-white/[0.04] translate-x-2"
-                      : "border-white/5 bg-transparent hover:border-white/15"
+                      ? "border-gold/50 bg-white/[0.08] shadow-[0_0_30px_rgba(212,175,55,0.15)] translate-x-2 md:translate-x-4"
+                      : "border-white/10 bg-white/[0.02] hover:bg-white/[0.06] hover:border-white/20"
                   }`}
                 >
                   <div className="flex items-baseline justify-between">

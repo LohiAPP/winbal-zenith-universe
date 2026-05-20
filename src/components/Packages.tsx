@@ -33,11 +33,25 @@ const packages = [
     places: "Singapore · Dubai · Zurich · New York",
     note: "Business itineraries layered with restorative escapes — for the modern executive.",
   },
+  {
+    img: corporate,
+    tag: "Business",
+    title: "Global Executive",
+    places: "London · Tokyo · Frankfurt · Hong Kong",
+    note: "Seamless corporate travel with dedicated account managers and premium transit.",
+  },
+  {
+    img: family,
+    tag: "Education",
+    title: "Enrichment Journeys",
+    places: "Oxford · Boston · Kyoto · Florence",
+    note: "Curated academic and cultural immersion tours for the next generation.",
+  },
 ];
 
 export function Packages() {
   return (
-    <section id="packages" className="relative py-32 md:py-48">
+    <section id="packages" className="relative py-12 md:py-20">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-20">
           <div>
@@ -52,7 +66,7 @@ export function Packages() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {packages.map((p, i) => (
             <motion.article
               key={p.title}
@@ -90,18 +104,21 @@ export function Packages() {
         </div>
 
         {/* Smart pricing strip */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-px bg-white/5 border border-white/10">
-          {[
-            { k: "Member vs Non-Member", v: "Up to 60% lower" },
-            { k: "EMI Available", v: "0% on Gold+ tiers" },
-            { k: "Early-Booking", v: "Extra 10% rebate" },
-            { k: "Referral Cashback", v: "₹15,000 / referral" },
-          ].map((s) => (
-            <div key={s.k} className="bg-navy/70 backdrop-blur-md py-6 px-6">
-              <div className="text-[10px] tracking-[0.4em] uppercase text-champagne/70 mb-2">{s.k}</div>
-              <div className="font-display text-xl text-gold-gradient">{s.v}</div>
-            </div>
-          ))}
+        <div className="mt-20 relative rounded-2xl md:rounded-[2rem] border border-gold/30 bg-black/40 backdrop-blur-xl shadow-[0_0_50px_rgba(212,175,55,0.15)] overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-r from-gold/[0.02] via-gold/[0.08] to-gold/[0.02]" />
+          <div className="grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-gold/20 relative z-10">
+            {[
+              { k: "Member vs Non-Member", v: "Up to 60% lower" },
+              { k: "EMI Available", v: "0% on Gold+ tiers" },
+              { k: "Early-Booking", v: "Extra 10% rebate" },
+              { k: "Referral Cashback", v: "₹15,000 / referral" },
+            ].map((s) => (
+              <div key={s.k} className="py-8 px-6 text-center group hover:bg-gold/[0.05] transition-colors duration-500">
+                <div className="text-[10px] tracking-[0.4em] uppercase text-champagne mb-3 drop-shadow-md">{s.k}</div>
+                <div className="font-display text-xl md:text-2xl text-gold-gradient drop-shadow-lg group-hover:scale-105 transition-transform duration-500">{s.v}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

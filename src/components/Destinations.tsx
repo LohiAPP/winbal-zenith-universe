@@ -11,7 +11,7 @@ const destinations = [
 
 export function Destinations() {
   return (
-    <section id="destinations" className="relative py-32 md:py-48">
+    <section id="destinations" className="relative py-12 md:py-20">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-20">
           <div>

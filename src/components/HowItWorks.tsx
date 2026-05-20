@@ -10,7 +10,7 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section id="how" className="relative py-32 md:py-48 overflow-hidden">
+    <section id="how" className="relative py-12 md:py-20 overflow-hidden">
       <div className="absolute inset-0">
         <img
           src={journey}

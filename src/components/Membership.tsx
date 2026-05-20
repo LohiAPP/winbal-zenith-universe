@@ -38,7 +38,7 @@ const tiers = [
 
 export function Membership() {
   return (
-    <section id="membership" className="relative py-32 md:py-48 overflow-hidden">
+    <section id="membership" className="relative py-12 md:py-20 overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,oklch(0.30_0.10_264/0.6),transparent_55%)]" />
 
       <div className="relative max-w-[1400px] mx-auto px-6 md:px-12">
@@ -142,7 +142,7 @@ export function Membership() {
                 and a single concierge line — answered on the first ring, anywhere in the world.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
-                <button className="btn-gold">Request Audience</button>
+                <button className="btn-gold">Request Elite Pass</button>
                 <span className="text-[10px] tracking-[0.4em] uppercase text-pearl/40 self-center">By referral · Vetted</span>
               </div>
             </div>

@@ -12,7 +12,7 @@ const features = [
 
 export function WhyChooseUs() {
   return (
-    <section className="relative py-32 md:py-48 overflow-hidden bg-navy">
+    <section className="relative py-12 md:py-20 overflow-hidden bg-navy">
       {/* Subtle Background Lighting */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,var(--gold)_0%,transparent_15%)] opacity-10 blur-[100px]" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,oklch(0.26_0.10_264/0.2),transparent_50%)]" />
@@ -60,7 +60,7 @@ export function WhyChooseUs() {
               viewport={{ once: true }}
               className="eyebrow mb-6"
             >
-              <span className="mr-2 text-champagne">🌟</span> Why Choose Winbal Travel Club
+              <span className="mr-2 text-champagne"></span> Why Choose Winbal Travel Club
             </motion.div>
             
             <motion.h2

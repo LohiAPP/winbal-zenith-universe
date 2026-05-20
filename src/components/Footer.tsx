@@ -86,7 +86,7 @@ export function Footer() {
         <div className="hairline mb-8" />
 
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 text-[10px] tracking-[0.3em] uppercase text-pearl/40">
-          <div>© MMXXVI Winbal Travel Club. All rights reserved.</div>
+          <div>© 2026 Winbal Travel Club. All rights reserved.</div>
           <div className="flex gap-8">
             <a href="#" className="hover:text-champagne transition-colors">Instagram</a>
             <a href="#" className="hover:text-champagne transition-colors">LinkedIn</a>

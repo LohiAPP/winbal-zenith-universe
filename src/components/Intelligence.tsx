@@ -11,7 +11,7 @@ const features = [
 
 export function Intelligence() {
   return (
-    <section id="intelligence" className="relative py-32 md:py-48 overflow-hidden">
+    <section id="intelligence" className="relative py-12 md:py-20 overflow-hidden">
       <div className="absolute inset-0 bg-[linear-gradient(180deg,var(--navy),oklch(0.22_0.07_264),var(--navy))]" />
       <div className="absolute inset-0 opacity-30 pointer-events-none"
            style={{
