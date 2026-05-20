@@ -7,12 +7,12 @@ import { WhyChooseUs } from "@/components/WhyChooseUs";
 import { Universe } from "@/components/Universe";
 import { HowItWorks } from "@/components/HowItWorks";
 import { Packages } from "@/components/Packages";
-import { PackageStructure } from "@/components/PackageStructure";
 import { Destinations } from "@/components/Destinations";
 import { Intelligence } from "@/components/Intelligence";
 import { Benefits } from "@/components/Benefits";
 import { Membership } from "@/components/Membership";
 import { Footer } from "@/components/Footer";
+import { PackageStructure } from "@/components/PackageStructure";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -41,7 +41,7 @@ function Index() {
       <Universe />
       <HowItWorks />
       <Packages />
-      <PackageStructure />
+      <PackageStructure/>
       <Destinations />
       <Intelligence />
       <Benefits />

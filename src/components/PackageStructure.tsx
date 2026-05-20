@@ -48,7 +48,7 @@ export function PackageStructure() {
               viewport={{ once: true }}
               className="eyebrow mb-6"
             >
-              <span className="mr-2 text-champagne">🔹</span> Competitive Strategy
+              <span className="mr-2 text-champagne">🔹</span> Travel Structure
             </motion.div>
             
             <motion.h2
