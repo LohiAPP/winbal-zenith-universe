@@ -70,16 +70,16 @@ export function Packages() {
                 loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.6s] ease-out group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/30 to-transparent" />
-              <div className="absolute top-6 left-6 right-6 flex justify-between items-center text-[10px] tracking-[0.4em] uppercase">
-                <span className="text-champagne">{p.tag}</span>
-                <span className="text-pearl/40">0{i + 1}</span>
+              <div className="absolute inset-0 bg-gradient-to-t from-navy/95 via-navy/60 to-black/20 group-hover:from-navy group-hover:via-navy/80 transition-colors duration-700" />
+              <div className="absolute top-6 left-6 right-6 flex justify-between items-center text-[10px] tracking-[0.4em] uppercase drop-shadow-md z-10">
+                <span className="text-champagne font-semibold">{p.tag}</span>
+                <span className="text-pearl/80 font-medium">0{i + 1}</span>
               </div>
-              <div className="absolute bottom-0 left-0 right-0 p-8 md:p-10">
-                <h3 className="font-display text-3xl md:text-4xl text-pearl mb-2">{p.title}</h3>
-                <div className="text-xs text-champagne/80 tracking-[0.2em] uppercase mb-4">{p.places}</div>
-                <div className="hairline mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-                <p className="text-sm text-pearl/70 font-light leading-relaxed max-w-md transition-all duration-700 translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
+              <div className="absolute bottom-0 left-0 right-0 p-8 md:p-10 drop-shadow-lg z-10">
+                <h3 className="font-display text-3xl md:text-4xl text-pearl mb-2 drop-shadow-xl">{p.title}</h3>
+                <div className="text-xs text-champagne font-medium tracking-[0.2em] uppercase mb-4 drop-shadow-md">{p.places}</div>
+                <div className="hairline mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-white/30" />
+                <p className="text-sm text-pearl/90 font-light leading-relaxed max-w-md transition-all duration-700 translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 drop-shadow-md">
                   {p.note}
                 </p>
               </div>

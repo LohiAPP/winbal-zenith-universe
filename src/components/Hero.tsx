@@ -27,8 +27,8 @@ export function Hero() {
           width={1920}
           height={1280}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-navy/60 via-navy/30 to-navy" />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy/70 via-transparent to-navy/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-navy/80 via-navy/50 to-navy" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/30 to-navy/60" />
       </motion.div>
 
       {/* Floating particles */}
@@ -64,7 +64,7 @@ export function Hero() {
           Private Travel Membership · Since 2026
         </motion.div>
 
-        <h1 className="font-display text-[clamp(2.6rem,7vw,6.5rem)] leading-[0.98] tracking-tight max-w-[18ch]">
+        <h1 className="font-display text-[clamp(2.6rem,7vw,6.5rem)] leading-[0.98] tracking-tight max-w-[18ch] drop-shadow-2xl">
           {["Travel Smarter.", "Experience More.", "Pay Less."].map((line, i) => (
             <motion.span
               key={line}
@@ -82,7 +82,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.4 }}
-          className="mt-10 max-w-xl text-pearl/70 text-base md:text-lg leading-relaxed font-light"
+          className="mt-10 max-w-xl text-pearl/90 text-base md:text-lg leading-relaxed font-light drop-shadow-lg"
         >
           Exclusive travel memberships offering luxury holidays, 5,000+ global destinations,
           and lifetime experiences at unbeatable member prices.

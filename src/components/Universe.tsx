@@ -82,17 +82,17 @@ export function Universe() {
                   <span className={`block rounded-full transition-all duration-500 ${
                     isActive ? "w-4 h-4 bg-champagne shadow-gold" : "w-2 h-2 bg-gold/70"
                   }`} />
-                  <span className={`absolute left-5 top-1/2 -translate-y-1/2 whitespace-nowrap text-[10px] tracking-[0.3em] uppercase transition-all duration-300 ${
-                    isActive ? "text-champagne opacity-100" : "text-pearl/50 opacity-60 group-hover:opacity-100"
+                  <span className={`absolute left-6 top-1/2 -translate-y-1/2 whitespace-nowrap text-xs font-medium tracking-[0.2em] uppercase transition-all duration-300 px-3 py-1.5 rounded-full bg-black/60 backdrop-blur-md border ${
+                    isActive ? "text-champagne opacity-100 border-gold/40 shadow-lg" : "text-pearl/90 opacity-90 border-white/15 group-hover:border-white/30"
                   }`}>{n.key}</span>
                 </button>
               );
             })}
 
-            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-              <div className="text-center">
-                <div className="text-[10px] tracking-[0.5em] uppercase text-champagne/70">Member</div>
-                <div className="font-display text-2xl text-pearl mt-1">{nodes[active].key}</div>
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-10">
+              <div className="text-center bg-black/60 backdrop-blur-md px-8 py-6 rounded-full border border-white/10 shadow-[0_0_40px_rgba(0,0,0,0.5)]">
+                <div className="text-[10px] font-medium tracking-[0.5em] uppercase text-champagne/90">Member</div>
+                <div className="font-display text-3xl text-pearl mt-2 drop-shadow-md">{nodes[active].key}</div>
               </div>
             </div>
           </div>
@@ -114,7 +114,7 @@ export function Universe() {
                 >
                   <div className="flex items-baseline justify-between">
                     <div className="flex items-baseline gap-4">
-                      <span className="text-[10px] tracking-[0.4em] text-champagne/60">{`0${i + 1}`}</span>
+                      <span className="text-xs font-semibold tracking-[0.4em] text-champagne/90">{`0${i + 1}`}</span>
                       <span className={`font-display text-xl md:text-2xl ${isActive ? "text-gold-gradient" : "text-pearl"}`}>
                         {n.key}
                       </span>

@@ -3,9 +3,11 @@ import { CursorGlow } from "@/components/CursorGlow";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/Hero";
+import { WhyChooseUs } from "@/components/WhyChooseUs";
 import { Universe } from "@/components/Universe";
 import { HowItWorks } from "@/components/HowItWorks";
 import { Packages } from "@/components/Packages";
+import { PackageStructure } from "@/components/PackageStructure";
 import { Destinations } from "@/components/Destinations";
 import { Intelligence } from "@/components/Intelligence";
 import { Benefits } from "@/components/Benefits";
@@ -35,9 +37,11 @@ function Index() {
       <CursorGlow />
       <Nav />
       <Hero />
+      <WhyChooseUs />
       <Universe />
       <HowItWorks />
       <Packages />
+      <PackageStructure />
       <Destinations />
       <Intelligence />
       <Benefits />

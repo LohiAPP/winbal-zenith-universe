@@ -34,24 +34,25 @@ export function HowItWorks() {
           </p>
         </div>
 
-        <div className="relative grid md:grid-cols-4 gap-px bg-white/5 border border-white/10">
-          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/60 to-transparent" />
+        <div className="relative grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {steps.map((s, i) => (
             <motion.div
               key={s.n}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.8, delay: i * 0.12 }}
-              className="relative bg-navy/80 backdrop-blur-md p-8 md:p-10 group hover:bg-royal/30 transition-colors duration-700"
+              transition={{ duration: 0.8, delay: i * 0.15 }}
+              className="relative overflow-hidden bg-black/50 backdrop-blur-xl p-8 md:p-10 rounded-3xl border border-white/10 hover:border-gold/40 hover:bg-black/70 hover:-translate-y-2 transition-all duration-700 shadow-2xl group"
             >
-              <div className="font-display text-5xl text-gold-gradient mb-6">{s.n}</div>
-              <h3 className="font-display text-xl md:text-2xl text-pearl mb-3 group-hover:text-champagne transition-colors duration-500">
+              <div className="absolute -right-4 -bottom-8 font-display text-[140px] leading-none text-white/[0.03] group-hover:text-gold/[0.05] transition-colors duration-700 pointer-events-none select-none">
+                {s.n}
+              </div>
+              <div className="font-display text-4xl text-gold-gradient mb-8 drop-shadow-lg">{s.n}</div>
+              <h3 className="font-display text-2xl text-pearl mb-4 group-hover:text-champagne transition-colors duration-500 relative z-10 drop-shadow-md">
                 {s.t}
               </h3>
-              <div className="hairline mb-4 opacity-50" />
-              <p className="text-sm text-pearl/65 font-light leading-relaxed">{s.d}</p>
-              <div className="absolute top-8 right-8 w-2 h-2 rounded-full bg-gold/40 group-hover:bg-champagne group-hover:shadow-gold transition-all duration-500" />
+              <div className="h-px w-12 bg-gold/50 mb-6 group-hover:w-full transition-all duration-700 ease-out" />
+              <p className="text-base text-pearl/90 font-light leading-relaxed relative z-10 drop-shadow-md">{s.d}</p>
             </motion.div>
           ))}
         </div>

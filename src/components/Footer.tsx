@@ -1,3 +1,5 @@
+import logo from "@/assets/logo.jpg";
+
 export function Footer() {
   return (
     <footer id="contact" className="relative pt-32 pb-12 overflow-hidden">
@@ -26,7 +28,7 @@ export function Footer() {
                 <input
                   type={f.t}
                   placeholder={f.p}
-                  className="w-full bg-transparent border-b border-white/15 py-3 text-pearl placeholder:text-pearl/30 focus:outline-none focus:border-gold transition-colors font-light"
+                  className="w-full bg-black/20 border border-white/10 rounded-lg px-4 py-3.5 text-pearl placeholder:text-pearl/50 focus:outline-none focus:border-gold/50 focus:bg-black/40 focus:ring-1 focus:ring-gold/30 transition-all font-light text-base"
                 />
               </div>
             ))}
@@ -35,31 +37,60 @@ export function Footer() {
               <textarea
                 rows={3}
                 placeholder="Where would you like to begin?"
-                className="w-full bg-transparent border-b border-white/15 py-3 text-pearl placeholder:text-pearl/30 focus:outline-none focus:border-gold transition-colors font-light resize-none"
+                className="w-full bg-black/20 border border-white/10 rounded-lg px-4 py-3.5 text-pearl placeholder:text-pearl/50 focus:outline-none focus:border-gold/50 focus:bg-black/40 focus:ring-1 focus:ring-gold/30 transition-all font-light resize-none text-base"
               />
             </div>
             <button type="submit" className="btn-gold w-full justify-center mt-4">Submit Application</button>
           </form>
         </div>
 
-        <div className="hairline mb-10" />
+        <div className="hairline mb-16" />
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+          <div className="lg:col-span-1">
+            <img src={logo} alt="Winbal Logo" className="h-14 w-auto object-contain rounded drop-shadow-lg opacity-90 mb-6" />
+            <p className="text-sm text-pearl/60 font-light leading-relaxed pr-4">
+              Exclusive travel memberships offering luxury holidays, rare destinations, and lifetime experiences — by invitation only.
+            </p>
+          </div>
+          
+          <div>
+            <h4 className="text-[10px] tracking-[0.3em] uppercase text-champagne/80 mb-6 font-bold">Contact</h4>
+            <ul className="space-y-4 text-sm text-pearl/70 font-light">
+              <li>concierge@winbal.com</li>
+              <li>+44 (0) 20 7123 4567</li>
+              <li>Available 24/7 for members</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 className="text-[10px] tracking-[0.3em] uppercase text-champagne/80 mb-6 font-bold">Offices</h4>
+            <ul className="space-y-4 text-sm text-pearl/70 font-light">
+              <li>London — Mayfair</li>
+              <li>Dubai — DIFC</li>
+              <li>Singapore — Marina Bay</li>
+              <li>Zürich — Paradeplatz</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 className="text-[10px] tracking-[0.3em] uppercase text-champagne/80 mb-6 font-bold">Legal</h4>
+            <ul className="space-y-4 text-sm text-pearl/70 font-light">
+              <li><a href="#" className="hover:text-champagne transition-colors">Privacy Policy</a></li>
+              <li><a href="#" className="hover:text-champagne transition-colors">Terms of Service</a></li>
+              <li><a href="#" className="hover:text-champagne transition-colors">Membership Rules</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="hairline mb-8" />
 
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 text-[10px] tracking-[0.3em] uppercase text-pearl/40">
-          <div className="flex items-center gap-3">
-            <div className="w-7 h-7 rounded-full bg-gold-gradient flex items-center justify-center">
-              <span className="font-display text-navy text-xs font-bold">W</span>
-            </div>
-            <span className="text-pearl/60">Winbal Travel Club</span>
-            <span>·</span>
-            <span>Est. MMXXVI</span>
-          </div>
+          <div>© MMXXVI Winbal Travel Club. All rights reserved.</div>
           <div className="flex gap-8">
-            <a href="#" className="hover:text-champagne transition-colors">Privacy</a>
-            <a href="#" className="hover:text-champagne transition-colors">Terms</a>
-            <a href="#" className="hover:text-champagne transition-colors">Press</a>
-            <a href="#" className="hover:text-champagne transition-colors">Careers</a>
+            <a href="#" className="hover:text-champagne transition-colors">Instagram</a>
+            <a href="#" className="hover:text-champagne transition-colors">LinkedIn</a>
           </div>
-          <div>London · Dubai · Singapore · Zürich</div>
         </div>
       </div>
     </footer>
