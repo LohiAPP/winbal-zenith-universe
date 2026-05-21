@@ -12,7 +12,7 @@ import { Intelligence } from "@/components/Intelligence";
 import { Benefits } from "@/components/Benefits";
 import { Membership } from "@/components/Membership";
 import { Footer } from "@/components/Footer";
-import { PackageStructure } from "@/components/PackageStructure";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -41,7 +41,7 @@ function Index() {
       <Universe />
       <HowItWorks />
       <Packages />
-      <PackageStructure/>
+
       <Destinations />
       <Intelligence />
       <Benefits />
