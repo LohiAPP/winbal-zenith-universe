@@ -24,12 +24,12 @@ export function Nav() {
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrolled ? "py-3 bg-navy/80 backdrop-blur-xl border-b border-white/5 shadow-xl" : "py-6"
+          scrolled ? "py-4 bg-gradient-to-r from-navy/90 via-navy/60 to-navy/80 backdrop-blur-2xl border-b border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.5)]" : "py-8 bg-transparent"
         }`}
       >
         <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex items-center justify-between">
           <a href="#top" className="flex items-center group">
-            <img src={logo} alt="Winbal Travel Club Logo" className="h-10 md:h-12 w-auto object-contain rounded drop-shadow-xl opacity-90 group-hover:opacity-100 transition-opacity" />
+            <img src={logo} alt="Winbal Travel Club Logo" className="h-14 md:h-16 w-auto object-contain rounded drop-shadow-2xl opacity-90 group-hover:opacity-100 transition-all duration-500 group-hover:scale-105" />
           </a>
 
           <nav className="hidden lg:flex items-center gap-10">
@@ -37,7 +37,7 @@ export function Nav() {
               <a
                 key={l.href}
                 href={l.href}
-                className="relative text-[11px] tracking-[0.3em] uppercase text-pearl/70 hover:text-champagne transition-colors duration-300 group"
+                className="relative text-xs font-medium tracking-[0.25em] uppercase text-pearl/75 hover:text-champagne transition-all duration-300 group"
               >
                 {l.label}
                 <span className="absolute -bottom-2 left-0 h-px w-0 bg-gold transition-all duration-500 group-hover:w-full" />

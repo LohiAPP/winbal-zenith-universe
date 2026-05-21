@@ -8,6 +8,7 @@ const tiers = [
     priceNote: "one-time · ₹5,000 AMC",
     perks: ["3–4 nights stay per year", "Domestic destinations", "Member-only fares", "24/7 concierge access"],
     style: "border-white/15",
+    borderColor: "#FFFFFF",
   },
   {
     name: "Silver",
@@ -16,6 +17,7 @@ const tiers = [
     priceNote: "from · ₹7,500 AMC",
     perks: ["6 nights stay per year", "Domestic + selected international", "Priority booking window", "Tier savings up to 40%"],
     style: "border-white/25",
+    borderColor: "#C0C0C0",
   },
   {
     name: "Gold",
@@ -25,6 +27,7 @@ const tiers = [
     perks: ["7 nights / year, split allowed", "Global destinations access", "Family package (4–6 members)", "Tier savings up to 55%"],
     style: "border-gold/50",
     featured: true,
+    borderColor: "#D4AF37",
   },
   {
     name: "Platinum",
@@ -33,6 +36,7 @@ const tiers = [
     priceNote: "10–25 yr or lifetime validity",
     perks: ["Unlimited booking priority", "Luxury resorts & private villas", "VIP concierge & upgrades", "Tier savings up to 60%"],
     style: "border-champagne/60",
+    borderColor: "#E5E4E2",
   },
 ];
 
@@ -60,19 +64,20 @@ export function Membership() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.9, delay: i * 0.1 }}
-              className={`group relative flex flex-col ${
+              className={`group relative flex flex-col hover:-translate-y-2 transition-all duration-700 ${
                 t.featured ? "lg:scale-[1.05] z-10" : "z-0"
               }`}
             >
+              <div className="animated-border rounded-3xl" style={{ "--border-color": t.borderColor } as React.CSSProperties} />
               {t.featured && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 text-[10px] tracking-[0.4em] font-bold uppercase bg-gold-gradient text-navy px-5 py-2 rounded-full shadow-[0_0_20px_rgba(212,175,55,0.6)] border border-white/20 whitespace-nowrap z-20">
                   Most Popular
                 </div>
               )}
-              <div className={`flex-1 flex flex-col glass-card p-8 md:p-10 border rounded-3xl hover:-translate-y-2 transition-all duration-700 ${t.style} ${
+              <div className={`flex-1 flex flex-col glass-card p-8 md:p-10 border rounded-3xl ${t.style} ${
                 t.featured ? "shadow-[0_0_60px_rgba(212,175,55,0.2)] bg-gradient-to-b from-gold/[0.12] to-transparent ring-2 ring-gold/40 border-gold/60" : "bg-white/[0.02] hover:bg-white/[0.04]"
               }`}>
-                <div className="text-[10px] tracking-[0.4em] uppercase text-champagne/70">{t.tag}</div>
+                <div className="text-[10px] tracking-[0.4em] uppercase text-champagne/70 relative z-10">{t.tag}</div>
                 <h3 className="font-display text-4xl mt-3">{t.name}</h3>
               <div className="mt-4 flex items-baseline gap-2">
                 <span className="font-display text-3xl text-gold-gradient">{t.price}</span>

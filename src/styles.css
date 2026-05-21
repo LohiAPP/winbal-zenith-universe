@@ -269,3 +269,51 @@
   transition: opacity .4s ease;
   mix-blend-mode: screen;
 }
+
+/* Animated luxury card borders */
+@keyframes border-spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.animated-border {
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1.5px;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.animated-border::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 35%,
+    var(--border-color) 50%,
+    transparent 65%
+  );
+  transform-origin: center center;
+  transform: translate(-50%, -50%) rotate(0deg);
+  animation: border-spin 4s linear infinite;
+  opacity: 0.65;
+  transition: all 0.5s ease;
+}
+
+.group:hover .animated-border::before {
+  opacity: 1;
+  background: conic-gradient(
+    from 0deg,
+    transparent 25%,
+    var(--border-color) 50%,
+    transparent 75%
+  );
+}

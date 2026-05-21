@@ -20,9 +20,9 @@ const groups = [
 
 export function Benefits() {
   return (
-    <section id="benefits" className="relative py-32 md:py-40">
+    <section id="benefits" className="relative py-16 md:py-24">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
-        <div className="text-center mb-20">
+        <div className="text-center mb-12">
           <div className="eyebrow mb-6 justify-center inline-flex">Member Benefits</div>
           <h2 className="font-display text-[clamp(2rem,5vw,4.5rem)] leading-[1.05] max-w-[18ch] mx-auto">
             Privileges that extend <span className="italic font-serif text-gold-gradient">beyond the journey</span>.

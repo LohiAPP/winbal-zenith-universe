@@ -2,10 +2,10 @@ import logo from "@/assets/logo.jpg";
 
 export function Footer() {
   return (
-    <footer id="contact" className="relative pt-32 pb-12 overflow-hidden">
+    <footer id="contact" className="relative pt-16 pb-12 overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,oklch(0.28_0.10_264/0.6),transparent_55%)]" />
       <div className="relative max-w-[1400px] mx-auto px-6 md:px-12">
-        <div className="grid md:grid-cols-2 gap-16 mb-24">
+        <div className="grid md:grid-cols-2 gap-12 mb-16">
           <div>
             <div className="eyebrow mb-6">Begin your application</div>
             <h2 className="font-display text-[clamp(2.2rem,5vw,4rem)] leading-[1.05]">

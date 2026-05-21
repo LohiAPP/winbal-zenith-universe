@@ -8,32 +8,11 @@ import education from "@/assets/package-education.png";
 
 const packages = [
   {
-    img: leisure,
-    tag: "Leisure",
-    title: "Honeymoon & Retreat",
-    places: "Maldives · Bali · Goa · Santorini",
-    note: "Overwater villas, private islands, and slow mornings designed for two.",
-  },
-  {
-    img: adventure,
-    tag: "Adventure",
-    title: "Summit & Wild",
-    places: "Aspen · Patagonia · Wadi Rum · Iceland",
-    note: "Heli-skiing, wildlife expeditions and curated trekking with private guides.",
-  },
-  {
-    img: family,
-    tag: "Family",
-    title: "Generations",
-    places: "Maldives · Phuket · Tuscany · Mauritius",
-    note: "Family villas, kids' programmes and chefs who cook for everyone at the table.",
-  },
-  {
-    img: corporate,
-    tag: "Bleisure",
-    title: "Executive & Corporate",
-    places: "Singapore · Dubai · Zurich · New York",
-    note: "Business itineraries layered with restorative escapes — for the modern executive.",
+    img: education,
+    tag: "Education",
+    title: "Enrichment Journeys",
+    places: "Oxford · Boston · Kyoto · Florence",
+    note: "Curated academic and cultural immersion tours for the next generation.",
   },
   {
     img: business,
@@ -43,11 +22,32 @@ const packages = [
     note: "Seamless corporate travel with dedicated account managers and premium transit.",
   },
   {
-    img: education,
-    tag: "Education",
-    title: "Enrichment Journeys",
-    places: "Oxford · Boston · Kyoto · Florence",
-    note: "Curated academic and cultural immersion tours for the next generation.",
+    img: corporate,
+    tag: "Bleisure",
+    title: "Executive & Corporate",
+    places: "Singapore · Dubai · Zurich · New York",
+    note: "Business itineraries layered with restorative escapes — for the modern executive.",
+  },
+  {
+    img: family,
+    tag: "Family",
+    title: "Generations",
+    places: "Maldives · Phuket · Tuscany · Mauritius",
+    note: "Family villas, kids' programmes and chefs who cook for everyone at the table.",
+  },
+  {
+    img: adventure,
+    tag: "Adventure",
+    title: "Summit & Wild",
+    places: "Aspen · Patagonia · Wadi Rum · Iceland",
+    note: "Heli-skiing, wildlife expeditions and curated trekking with private guides.",
+  },
+  {
+    img: leisure,
+    tag: "Leisure",
+    title: "Honeymoon & Retreat",
+    places: "Maldives · Bali · Goa · Santorini",
+    note: "Overwater villas, private islands, and slow mornings designed for two.",
   },
 ];
 

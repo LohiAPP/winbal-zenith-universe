@@ -16,7 +16,7 @@ export function Destinations() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-20">
           <div>
             <div className="eyebrow mb-6">Member Destinations</div>
-            <h2 className="font-display text-[clamp(2rem,5vw,4.5rem)] leading-[1.05] max-w-[14ch]">
+            <h2 className="font-display text-[clamp(3rem,8vw,6.5rem)] tracking-tight leading-[1.05] max-w-[14ch]">
               Places that <span className="italic font-serif text-gold-gradient">refuse</span> ordinary guests.
             </h2>
           </div>
@@ -44,12 +44,12 @@ export function Destinations() {
                 loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.6s] ease-out group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/50 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-b from-navy/80 via-transparent to-transparent" />
               <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-navy/40 mix-blend-multiply" />
 
-              <div className="absolute top-6 left-6 right-6 flex justify-between items-start text-[10px] tracking-[0.4em] uppercase">
-                <span className="text-champagne/80">{d.region}</span>
-                <span className="text-pearl/40">{d.code}</span>
+              <div className="absolute top-6 left-6 right-6 flex justify-between items-start text-xs font-bold tracking-[0.3em] uppercase drop-shadow-lg z-10">
+                <span className="text-champagne">{d.region}</span>
               </div>
 
               <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
