@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import heroJet from "@/assets/hero-jet.jpg";
+import logo from "@/assets/logo.jpg";
 
 const stats = [
   { value: "5000+", label: "Destinations" },
@@ -55,6 +56,15 @@ export function Hero() {
         style={{ y: textY, opacity }}
         className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-12 pt-40 pb-20 min-h-[100vh] flex flex-col justify-center"
       >
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.1 }}
+          className="absolute top-28 md:top-40 right-6 md:right-12"
+        >
+          <img src={logo} alt="Winbal Travel Club Logo" className="h-20 md:h-28 w-auto object-contain rounded drop-shadow-2xl" />
+        </motion.div>
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
