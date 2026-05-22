@@ -57,9 +57,9 @@ export function Footer() {
           <div>
             <h4 className="text-[10px] tracking-[0.3em] uppercase text-champagne/80 mb-6 font-bold">Contact</h4>
             <ul className="space-y-4 text-sm text-pearl/70 font-light">
-              <li>concierge@winbal.com</li>
-              <li>+44 (0) 20 7123 4567</li>
-              <li>Available 24/7 for members</li>
+              <li><a href="mailto:winbaltechmd@gmail.com" className="hover:text-champagne transition-colors">winbaltechmd@gmail.com</a></li>
+              <li>+91 8143336440</li>
+              <li><a href="https://winbaltravelclub.com" target="_blank" rel="noreferrer" className="hover:text-champagne transition-colors">winbaltravelclub.com</a></li>
             </ul>
           </div>
           
