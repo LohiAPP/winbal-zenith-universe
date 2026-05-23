@@ -59,7 +59,7 @@ export function Footer() {
             <ul className="space-y-4 text-sm text-pearl/70 font-light">
               <li><a href="mailto:winbaltechmd@gmail.com" className="hover:text-champagne transition-colors">winbaltechmd@gmail.com</a></li>
               <li>+91 8143336440</li>
-              <li><a href="https://winbaltravelclub.com" target="_blank" rel="noreferrer" className="hover:text-champagne transition-colors">winbaltravelclub.com</a></li>
+              <li><a href="https://www.winbaltravelclub.com" target="_blank" rel="noreferrer" className="hover:text-champagne transition-colors">www.winbaltravelclub.com</a></li>
             </ul>
           </div>
           
